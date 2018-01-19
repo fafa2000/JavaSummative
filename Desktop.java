@@ -54,16 +54,16 @@ public class Desktop extends javax.swing.JFrame {
             }
         });
         desktopPane.add(jButton1);
-        jButton1.setBounds(530, 50, 180, 60);
+        jButton1.setBounds(520, 120, 180, 60);
 
-        jButton2.setText("Game");
+        jButton2.setText("Nomenclature Quiz!");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
         desktopPane.add(jButton2);
-        jButton2.setBounds(530, 150, 180, 60);
+        jButton2.setBounds(520, 250, 180, 60);
 
         fileMenu.setMnemonic('f');
         fileMenu.setText("File");
@@ -133,9 +133,9 @@ public class Desktop extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Game game = new Game();
-        desktopPane.add(game);
-        game.show();
+        NomenclatureQuiz quiz = new NomenclatureQuiz();
+        desktopPane.add(quiz);
+        quiz.show();
             }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
