@@ -282,7 +282,7 @@ public class NomenclatureQuiz extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+//When button clicked, checks each answer and calculates score
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         int score = 0;
         if ( jRadioButton4.isSelected()){
