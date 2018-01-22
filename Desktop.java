@@ -84,13 +84,14 @@ public class Desktop extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    //when the "lessons" button is clicked, the lessonm internal frame pops up
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Lesson lesson = new Lesson();
         desktopPane.add(lesson);
         lesson.show();
         
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    // when the "nomenclature quiz" button is clicked, the quiz internal frame pops up
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         NomenclatureQuiz quiz = new NomenclatureQuiz();
         desktopPane.add(quiz);

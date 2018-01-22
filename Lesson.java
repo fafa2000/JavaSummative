@@ -691,6 +691,7 @@ public class Lesson extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
+//checks user answer
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if ( jRadioButton2.isSelected()){
         jLabel7.setText("You are correct ;)");
@@ -703,6 +704,7 @@ public class Lesson extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton3ActionPerformed
 
+//checks user answer
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
        String ans = jTextField1.getText();
        if (Integer.parseInt(ans)==20){
@@ -712,6 +714,7 @@ public class Lesson extends javax.swing.JInternalFrame {
        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    //checks user answer
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        String ans = jTextField2.getText();
        if (Integer.parseInt(ans)==20){
@@ -720,6 +723,7 @@ public class Lesson extends javax.swing.JInternalFrame {
             jLabel19.setText("Try Again!");
        }    }//GEN-LAST:event_jButton2ActionPerformed
 
+//checks user answer
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         if ( jRadioButton8.isSelected()){
         jLabel29.setText("You are correct ;)");
@@ -736,6 +740,7 @@ public class Lesson extends javax.swing.JInternalFrame {
         }         
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    //checks user answer
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         if ( jRadioButton11.isSelected()){
         jLabel31.setText("You are correct ;)");
@@ -744,9 +749,9 @@ public class Lesson extends javax.swing.JInternalFrame {
         }      }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jRadioButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton11ActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton11ActionPerformed
 
+//checks user answer
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         if ( jRadioButton14.isSelected()){
         jLabel32.setText("You are correct ;)");
@@ -754,6 +759,7 @@ public class Lesson extends javax.swing.JInternalFrame {
         jLabel32.setText("Try again");
         }        }//GEN-LAST:event_jButton7ActionPerformed
 
+    //checks user answer
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         if ( jRadioButton17.isSelected()){
         jLabel33.setText("You are correct ;)");
@@ -761,6 +767,7 @@ public class Lesson extends javax.swing.JInternalFrame {
         jLabel33.setText("Try again");
         }        }//GEN-LAST:event_jButton8ActionPerformed
 
+    //checks user answer
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         if ( jRadioButton19.isSelected()){
         jLabel34.setText("You are correct ;)");
