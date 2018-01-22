@@ -31,21 +31,14 @@ public class Desktop extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         menuBar = new javax.swing.JMenuBar();
-        fileMenu = new javax.swing.JMenu();
-        openMenuItem = new javax.swing.JMenuItem();
-        saveMenuItem = new javax.swing.JMenuItem();
-        saveAsMenuItem = new javax.swing.JMenuItem();
-        exitMenuItem = new javax.swing.JMenuItem();
-        helpMenu = new javax.swing.JMenu();
-        contentMenuItem = new javax.swing.JMenuItem();
-        aboutMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/summative/Salty Solutions.png"))); // NOI18N
         desktopPane.add(jLabel1);
-        jLabel1.setBounds(0, 0, 600, 410);
+        jLabel1.setBounds(80, 60, 600, 410);
 
         jButton1.setText("Lesson");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -54,7 +47,7 @@ public class Desktop extends javax.swing.JFrame {
             }
         });
         desktopPane.add(jButton1);
-        jButton1.setBounds(520, 120, 180, 60);
+        jButton1.setBounds(660, 140, 180, 60);
 
         jButton2.setText("Nomenclature Quiz!");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -63,47 +56,13 @@ public class Desktop extends javax.swing.JFrame {
             }
         });
         desktopPane.add(jButton2);
-        jButton2.setBounds(520, 250, 180, 60);
+        jButton2.setBounds(660, 330, 180, 60);
 
-        fileMenu.setMnemonic('f');
-        fileMenu.setText("File");
-
-        openMenuItem.setMnemonic('o');
-        openMenuItem.setText("Open");
-        fileMenu.add(openMenuItem);
-
-        saveMenuItem.setMnemonic('s');
-        saveMenuItem.setText("Save");
-        fileMenu.add(saveMenuItem);
-
-        saveAsMenuItem.setMnemonic('a');
-        saveAsMenuItem.setText("Save As ...");
-        saveAsMenuItem.setDisplayedMnemonicIndex(5);
-        fileMenu.add(saveAsMenuItem);
-
-        exitMenuItem.setMnemonic('x');
-        exitMenuItem.setText("Exit");
-        exitMenuItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitMenuItemActionPerformed(evt);
-            }
-        });
-        fileMenu.add(exitMenuItem);
-
-        menuBar.add(fileMenu);
-
-        helpMenu.setMnemonic('h');
-        helpMenu.setText("Help");
-
-        contentMenuItem.setMnemonic('c');
-        contentMenuItem.setText("Contents");
-        helpMenu.add(contentMenuItem);
-
-        aboutMenuItem.setMnemonic('a');
-        aboutMenuItem.setText("About");
-        helpMenu.add(aboutMenuItem);
-
-        menuBar.add(helpMenu);
+        jLabel2.setFont(new java.awt.Font("Yu Gothic Medium", 2, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 204));
+        jLabel2.setText("Brought to you by:");
+        desktopPane.add(jLabel2);
+        jLabel2.setBounds(40, 20, 240, 40);
 
         setJMenuBar(menuBar);
 
@@ -111,19 +70,19 @@ public class Desktop extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 733, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(desktopPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 421, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(desktopPane, javax.swing.GroupLayout.PREFERRED_SIZE, 707, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_exitMenuItemActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Lesson lesson = new Lesson();
@@ -175,19 +134,12 @@ public class Desktop extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem aboutMenuItem;
-    private javax.swing.JMenuItem contentMenuItem;
     private javax.swing.JDesktopPane desktopPane;
-    private javax.swing.JMenuItem exitMenuItem;
-    private javax.swing.JMenu fileMenu;
-    private javax.swing.JMenu helpMenu;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenuBar menuBar;
-    private javax.swing.JMenuItem openMenuItem;
-    private javax.swing.JMenuItem saveAsMenuItem;
-    private javax.swing.JMenuItem saveMenuItem;
     // End of variables declaration//GEN-END:variables
 
 }
